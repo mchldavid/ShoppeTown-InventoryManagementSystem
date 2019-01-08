@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ShoppeTown_InventorySystem
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class frmLogin : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -30,6 +30,13 @@ namespace ShoppeTown_InventorySystem
         private void txtPassword_OnValueChanged(object sender, EventArgs e)
         {
             txtPassword.isPassword = true;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            frmAdminDashboard admin = new frmAdminDashboard();
+            this.Hide();
+            admin.Show();
         }
     }
 }

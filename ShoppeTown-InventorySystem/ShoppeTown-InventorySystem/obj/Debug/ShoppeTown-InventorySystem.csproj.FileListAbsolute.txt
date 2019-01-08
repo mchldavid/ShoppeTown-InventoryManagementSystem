@@ -10,3 +10,15 @@ C:\Users\Michael David\documents\visual studio 2012\Projects\ShoppeTown-Inventor
 C:\Users\Michael David\documents\visual studio 2012\Projects\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MetroFramework.dll
 C:\Users\Michael David\documents\visual studio 2012\Projects\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Michael David\documents\visual studio 2012\Projects\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAdminDashboard.resources
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\ShoppeTown-InventorySystem.exe.config
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.exe
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.pdb
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\ShoppeTown-InventorySystem.exe
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\ShoppeTown-InventorySystem.pdb
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MetroFramework.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csprojResolveAssemblyReference.cache
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmAdminDashboard.resources
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.frmLogin.resources
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.Properties.Resources.resources
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csproj.GenerateResource.Cache

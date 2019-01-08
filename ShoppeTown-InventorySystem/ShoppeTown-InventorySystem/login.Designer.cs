@@ -1,6 +1,6 @@
 ﻿namespace ShoppeTown_InventorySystem
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -81,9 +81,9 @@
             this.txtUsername.HintForeColor = System.Drawing.Color.Empty;
             this.txtUsername.HintText = "Username";
             this.txtUsername.isPassword = false;
-            this.txtUsername.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtUsername.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
             this.txtUsername.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
             this.txtUsername.LineThickness = 3;
             this.txtUsername.Location = new System.Drawing.Point(308, 138);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
@@ -100,9 +100,9 @@
             this.txtPassword.HintForeColor = System.Drawing.Color.Empty;
             this.txtPassword.HintText = "Password";
             this.txtPassword.isPassword = false;
-            this.txtPassword.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtPassword.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
             this.txtPassword.LineIdleColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtPassword.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(119)))), ((int)(((byte)(6)))));
             this.txtPassword.LineThickness = 3;
             this.txtPassword.Location = new System.Drawing.Point(308, 190);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
@@ -160,6 +160,7 @@
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Textcolor = System.Drawing.Color.White;
             this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label2
             // 
@@ -172,7 +173,7 @@
             this.label2.Text = "Welcome to the ShoppeTown Inventory Management System. Please enter your account." +
     "";
             // 
-            // Form1
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,7 +185,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmLogin";
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "2";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -198,14 +199,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private Bunifu.Framework.UI.BunifuImageButton btnExit;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogin;
-        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Panel panel1;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
+        public Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
+        public System.Windows.Forms.PictureBox pictureBox2;
+        public Bunifu.Framework.UI.BunifuImageButton btnExit;
+        public Bunifu.Framework.UI.BunifuFlatButton btnLogin;
+        public System.Windows.Forms.Label label2;
+
 
 
 

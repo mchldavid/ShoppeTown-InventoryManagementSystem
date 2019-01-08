@@ -21,5 +21,12 @@ namespace ShoppeTown_InventorySystem
         {
 
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            this.Hide();
+            login.Show();
+        }
     }
 }
