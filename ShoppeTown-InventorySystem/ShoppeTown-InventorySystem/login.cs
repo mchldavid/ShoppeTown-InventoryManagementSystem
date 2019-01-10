@@ -17,6 +17,8 @@ namespace ShoppeTown_InventorySystem
             InitializeComponent();
         }
 
+        MyDatabase md = new MyDatabase();
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -34,9 +36,36 @@ namespace ShoppeTown_InventorySystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmAdminDashboard admin = new frmAdminDashboard();
-            this.Hide();
-            admin.Show();
+            if (txtUsername.Text != "" && txtPassword.Text != "")
+            {
+                if (md.TestLogin(txtUsername.Text, txtPassword.Text) == "PASSED")
+                {
+                    frmAdminDashboard admin = new frmAdminDashboard();
+                    this.Hide();
+                    admin.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Account Doesn't Exists!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPassword.Text = "";
+                    txtUsername.Text = "";
+                    txtUsername.Focus();
+                }
+            }
+            else
+            {
+                if (txtUsername.Text == "")
+                {
+                    MessageBox.Show("Username is required!", "Username", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtUsername.Focus();
+                }
+                else if (txtPassword.Text == "")
+                {
+                    MessageBox.Show("Password is required!", "Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPassword.Focus();
+                }
+            }
+            
         }
     }
 }

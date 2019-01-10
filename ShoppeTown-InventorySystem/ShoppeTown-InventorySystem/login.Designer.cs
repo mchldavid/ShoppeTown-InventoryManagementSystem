@@ -88,8 +88,8 @@
             this.txtUsername.Location = new System.Drawing.Point(308, 138);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(335, 44);
-            this.txtUsername.TabIndex = 2;
+            this.txtUsername.Size = new System.Drawing.Size(345, 44);
+            this.txtUsername.TabIndex = 3;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtPassword
@@ -107,14 +107,14 @@
             this.txtPassword.Location = new System.Drawing.Point(308, 190);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(335, 44);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.Size = new System.Drawing.Size(345, 44);
+            this.txtPassword.TabIndex = 4;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageActive = null;
             this.btnExit.Location = new System.Drawing.Point(651, 0);
@@ -154,8 +154,8 @@
             this.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(335, 51);
-            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Size = new System.Drawing.Size(345, 51);
+            this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Textcolor = System.Drawing.Color.White;
@@ -169,9 +169,8 @@
             this.label2.Location = new System.Drawing.Point(303, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(362, 42);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Welcome to the ShoppeTown Inventory Management System. Please enter your account." +
-    "";
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Welcome to ShoppeTown Inventory Management System. Please enter your account.";
             // 
             // frmLogin
             // 
