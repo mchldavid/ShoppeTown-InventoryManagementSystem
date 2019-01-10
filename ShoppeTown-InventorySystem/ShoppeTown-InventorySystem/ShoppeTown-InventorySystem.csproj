@@ -86,6 +86,60 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_control.Designer.cs">
+      <DependentUpon>Item_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategory1_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubCategory1_control.Designer.cs">
+      <DependentUpon>SubCategory1_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\SubCategory2_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\SubCategory2_control.Designer.cs">
+      <DependentUpon>SubCategory2_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\Supplier_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\Supplier_Control.Designer.cs">
+      <DependentUpon>Supplier_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\Units_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\Units_control.Designer.cs">
+      <DependentUpon>Units_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\Company_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\Company_control.Designer.cs">
+      <DependentUpon>Company_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\MainCategory_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\MainCategory_control.Designer.cs">
+      <DependentUpon>MainCategory_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\Payment_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\Payment_control.Designer.cs">
+      <DependentUpon>Payment_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\ItemLocation_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\ItemLocation_control.Designer.cs">
+      <DependentUpon>ItemLocation_control.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +158,33 @@
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_control.resx">
+      <DependentUpon>Item_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubCategory1_control.resx">
+      <DependentUpon>SubCategory1_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\SubCategory2_control.resx">
+      <DependentUpon>SubCategory2_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\Supplier_Control.resx">
+      <DependentUpon>Supplier_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\Units_control.resx">
+      <DependentUpon>Units_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\Company_control.resx">
+      <DependentUpon>Company_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\MainCategory_control.resx">
+      <DependentUpon>MainCategory_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\Payment_control.resx">
+      <DependentUpon>Payment_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\ItemLocation_control.resx">
+      <DependentUpon>ItemLocation_control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

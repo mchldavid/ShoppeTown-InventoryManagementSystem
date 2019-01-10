@@ -50,3 +50,4 @@ C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-I
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Web.dll
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.register.resources
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.register.resources
