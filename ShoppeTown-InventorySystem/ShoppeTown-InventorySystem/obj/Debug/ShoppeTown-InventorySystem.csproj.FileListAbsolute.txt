@@ -39,3 +39,9 @@ C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-I
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Data.dll
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown-InventorySystem.csproj.CopyComplete
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Data.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Data.Entity.EF5.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Fabric.Plugin.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\MySql.Web.dll
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml

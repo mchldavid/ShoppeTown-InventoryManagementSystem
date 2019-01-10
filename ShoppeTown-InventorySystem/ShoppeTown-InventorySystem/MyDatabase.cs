@@ -24,7 +24,7 @@ namespace ShoppeTown_InventorySystem
             try
             {
                 con.Open();
-                string SqlSelectUsers = "SELECT * FROM tbl_users WHERE user_username=@u AND user_password=@p;";
+                string SqlSelectUsers = "SELECT * FROM tbl_users WHERE username=@u AND password=@p;";
                 MySqlCommand com = new MySqlCommand(SqlSelectUsers, con);
                 com.Parameters.AddWithValue("@u", usr);
                 com.Parameters.AddWithValue("@p", pwd);
