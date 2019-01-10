@@ -37,6 +37,7 @@
             this.btnExit = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnRegister = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -171,12 +172,51 @@
             this.label2.Size = new System.Drawing.Size(362, 42);
             this.label2.TabIndex = 2;
             this.label2.Text = "Welcome to ShoppeTown Inventory Management System. Please enter your account.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(127)))), ((int)(((byte)(12)))));
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(127)))), ((int)(((byte)(12)))));
+            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegister.BorderRadius = 0;
+            this.btnRegister.ButtonText = "REGISTER";
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRegister.Iconimage = null;
+            this.btnRegister.Iconimage_right = null;
+            this.btnRegister.Iconimage_right_Selected = null;
+            this.btnRegister.Iconimage_Selected = null;
+            this.btnRegister.IconMarginLeft = 0;
+            this.btnRegister.IconMarginRight = 0;
+            this.btnRegister.IconRightVisible = true;
+            this.btnRegister.IconRightZoom = 0D;
+            this.btnRegister.IconVisible = true;
+            this.btnRegister.IconZoom = 90D;
+            this.btnRegister.IsTab = false;
+            this.btnRegister.Location = new System.Drawing.Point(429, 330);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(127)))), ((int)(((byte)(12)))));
+            this.btnRegister.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnRegister.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRegister.selected = false;
+            this.btnRegister.Size = new System.Drawing.Size(113, 38);
+            this.btnRegister.TabIndex = 7;
+            this.btnRegister.Text = "REGISTER";
+            this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRegister.Textcolor = System.Drawing.Color.White;
+            this.btnRegister.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 401);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnExit);
@@ -206,13 +246,7 @@
         public Bunifu.Framework.UI.BunifuImageButton btnExit;
         public Bunifu.Framework.UI.BunifuFlatButton btnLogin;
         public System.Windows.Forms.Label label2;
-
-
-
-
-
-
-
+        public Bunifu.Framework.UI.BunifuFlatButton btnRegister;
     }
 }
 

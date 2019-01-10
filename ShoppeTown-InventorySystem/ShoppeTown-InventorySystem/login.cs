@@ -67,5 +67,17 @@ namespace ShoppeTown_InventorySystem
             }
             
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            register register = new register();
+            this.Hide();
+            register.Show();
+        }
     }
 }

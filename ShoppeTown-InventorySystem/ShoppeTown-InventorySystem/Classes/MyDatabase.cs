@@ -46,5 +46,7 @@ namespace ShoppeTown_InventorySystem
             }
             return usersResult;
         }
+        /*---------- register ----------*/
+
     }
 }
