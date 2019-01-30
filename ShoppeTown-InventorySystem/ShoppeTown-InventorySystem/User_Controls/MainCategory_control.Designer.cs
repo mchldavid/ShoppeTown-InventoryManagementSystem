@@ -201,6 +201,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "MainCategory_control";
             this.Size = new System.Drawing.Size(545, 412);
+            this.Load += new System.EventHandler(this.MainCategory_control_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

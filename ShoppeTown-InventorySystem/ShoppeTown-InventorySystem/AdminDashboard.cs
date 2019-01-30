@@ -38,5 +38,10 @@ namespace ShoppeTown_InventorySystem
         {
 
         }
+
+        private void btnPurchasing_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

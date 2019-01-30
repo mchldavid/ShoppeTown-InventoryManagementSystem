@@ -16,5 +16,10 @@ namespace ShoppeTown_InventorySystem
         {
             InitializeComponent();
         }
+
+        private void MainCategory_control_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

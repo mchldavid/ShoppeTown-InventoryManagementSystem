@@ -147,9 +147,9 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(51, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 20);
+            this.label3.Size = new System.Drawing.Size(131, 20);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Nickname:";
+            this.label3.Text = "Company Code:";
             // 
             // txtCompanyName
             // 
@@ -354,6 +354,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "Company_control";
             this.Size = new System.Drawing.Size(525, 540);
+            this.Load += new System.EventHandler(this.Company_control_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

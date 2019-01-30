@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlButtons = new System.Windows.Forms.Panel();
+            this.btnPurchasing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLogs = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBackupAndRestore = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -105,6 +106,7 @@
             this.pnlButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pnlButtons.Controls.Add(this.btnPurchasing);
             this.pnlButtons.Controls.Add(this.btnLogout);
             this.pnlButtons.Controls.Add(this.btnLogs);
             this.pnlButtons.Controls.Add(this.btnBackupAndRestore);
@@ -115,6 +117,41 @@
             this.pnlButtons.Name = "pnlButtons";
             this.pnlButtons.Size = new System.Drawing.Size(231, 647);
             this.pnlButtons.TabIndex = 2;
+            // 
+            // btnPurchasing
+            // 
+            this.btnPurchasing.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnPurchasing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnPurchasing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPurchasing.BorderRadius = 0;
+            this.btnPurchasing.ButtonText = "Procurement";
+            this.btnPurchasing.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPurchasing.DisabledColor = System.Drawing.Color.Gray;
+            this.btnPurchasing.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnPurchasing.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnPurchasing.Iconimage")));
+            this.btnPurchasing.Iconimage_right = null;
+            this.btnPurchasing.Iconimage_right_Selected = null;
+            this.btnPurchasing.Iconimage_Selected = null;
+            this.btnPurchasing.IconMarginLeft = 0;
+            this.btnPurchasing.IconMarginRight = 0;
+            this.btnPurchasing.IconRightVisible = true;
+            this.btnPurchasing.IconRightZoom = 0D;
+            this.btnPurchasing.IconVisible = true;
+            this.btnPurchasing.IconZoom = 90D;
+            this.btnPurchasing.IsTab = false;
+            this.btnPurchasing.Location = new System.Drawing.Point(0, 47);
+            this.btnPurchasing.Name = "btnPurchasing";
+            this.btnPurchasing.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnPurchasing.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnPurchasing.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnPurchasing.selected = false;
+            this.btnPurchasing.Size = new System.Drawing.Size(239, 48);
+            this.btnPurchasing.TabIndex = 4;
+            this.btnPurchasing.Text = "Procurement";
+            this.btnPurchasing.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPurchasing.Textcolor = System.Drawing.Color.White;
+            this.btnPurchasing.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchasing.Click += new System.EventHandler(this.btnPurchasing_Click);
             // 
             // btnLogout
             // 
@@ -137,7 +174,7 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 90D;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 235);
+            this.btnLogout.Location = new System.Drawing.Point(0, 282);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -172,7 +209,7 @@
             this.btnLogs.IconVisible = true;
             this.btnLogs.IconZoom = 90D;
             this.btnLogs.IsTab = false;
-            this.btnLogs.Location = new System.Drawing.Point(0, 188);
+            this.btnLogs.Location = new System.Drawing.Point(0, 235);
             this.btnLogs.Name = "btnLogs";
             this.btnLogs.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogs.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -206,7 +243,7 @@
             this.btnBackupAndRestore.IconVisible = true;
             this.btnBackupAndRestore.IconZoom = 90D;
             this.btnBackupAndRestore.IsTab = false;
-            this.btnBackupAndRestore.Location = new System.Drawing.Point(0, 141);
+            this.btnBackupAndRestore.Location = new System.Drawing.Point(0, 188);
             this.btnBackupAndRestore.Name = "btnBackupAndRestore";
             this.btnBackupAndRestore.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnBackupAndRestore.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -240,7 +277,7 @@
             this.btnUserAccounts.IconVisible = true;
             this.btnUserAccounts.IconZoom = 90D;
             this.btnUserAccounts.IsTab = false;
-            this.btnUserAccounts.Location = new System.Drawing.Point(0, 94);
+            this.btnUserAccounts.Location = new System.Drawing.Point(0, 141);
             this.btnUserAccounts.Name = "btnUserAccounts";
             this.btnUserAccounts.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnUserAccounts.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -259,7 +296,7 @@
             this.btnInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInventory.BorderRadius = 0;
-            this.btnInventory.ButtonText = "Inventory";
+            this.btnInventory.ButtonText = "FASM";
             this.btnInventory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInventory.DisabledColor = System.Drawing.Color.Gray;
             this.btnInventory.Iconcolor = System.Drawing.Color.Transparent;
@@ -274,7 +311,7 @@
             this.btnInventory.IconVisible = true;
             this.btnInventory.IconZoom = 90D;
             this.btnInventory.IsTab = false;
-            this.btnInventory.Location = new System.Drawing.Point(0, 47);
+            this.btnInventory.Location = new System.Drawing.Point(0, 94);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnInventory.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -282,7 +319,7 @@
             this.btnInventory.selected = false;
             this.btnInventory.Size = new System.Drawing.Size(239, 48);
             this.btnInventory.TabIndex = 3;
-            this.btnInventory.Text = "Inventory";
+            this.btnInventory.Text = "FASM";
             this.btnInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInventory.Textcolor = System.Drawing.Color.White;
             this.btnInventory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,11 +361,11 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Vivaldi", 8.25F);
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblTitle.Location = new System.Drawing.Point(245, 60);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(48, 13);
+            this.lblTitle.Size = new System.Drawing.Size(186, 38);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Dashboard";
             // 
@@ -367,11 +404,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(113, 72);
+            this.label1.Location = new System.Drawing.Point(123, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 21);
+            this.label1.Size = new System.Drawing.Size(102, 21);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Total Product";
+            this.label1.Text = "Total Stocks";
             // 
             // dataGridView1
             // 
@@ -479,11 +516,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(113, 72);
+            this.label5.Location = new System.Drawing.Point(125, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 21);
+            this.label5.Size = new System.Drawing.Size(103, 21);
             this.label5.TabIndex = 3;
-            this.label5.Text = "Total Product";
+            this.label5.Text = "Total Item/s";
             // 
             // panel7
             // 
@@ -657,5 +694,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel11;
+        public Bunifu.Framework.UI.BunifuFlatButton btnPurchasing;
     }
 }

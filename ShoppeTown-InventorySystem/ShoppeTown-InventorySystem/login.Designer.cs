@@ -38,6 +38,7 @@
             this.btnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnRegister = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -66,6 +67,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(25, 59);
             this.pictureBox2.Name = "pictureBox2";
@@ -211,15 +213,23 @@
             this.btnRegister.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(569, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(122, 40);
+            this.panel2.TabIndex = 8;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(691, 401);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.panel1);
@@ -247,6 +257,7 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnLogin;
         public System.Windows.Forms.Label label2;
         public Bunifu.Framework.UI.BunifuFlatButton btnRegister;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

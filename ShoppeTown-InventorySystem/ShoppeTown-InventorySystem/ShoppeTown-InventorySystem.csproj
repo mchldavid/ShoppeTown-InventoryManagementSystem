@@ -84,16 +84,16 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Item_control.cs">
+    <Compile Include="User_Controls\Item_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Item_control.Designer.cs">
+    <Compile Include="User_Controls\Item_control.Designer.cs">
       <DependentUpon>Item_control.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubCategory1_control.cs">
+    <Compile Include="User_Controls\SubCategory1_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SubCategory1_control.Designer.cs">
+    <Compile Include="User_Controls\SubCategory1_control.Designer.cs">
       <DependentUpon>SubCategory1_control.cs</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\SubCategory2_control.cs">
@@ -164,10 +164,10 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Item_control.resx">
+    <EmbeddedResource Include="User_Controls\Item_control.resx">
       <DependentUpon>Item_control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubCategory1_control.resx">
+    <EmbeddedResource Include="User_Controls\SubCategory1_control.resx">
       <DependentUpon>SubCategory1_control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\SubCategory2_control.resx">

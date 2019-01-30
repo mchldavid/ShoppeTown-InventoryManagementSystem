@@ -37,8 +37,6 @@
             this.txtSupplierCode = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,6 +67,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txtRemarks = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCancel
@@ -207,24 +207,6 @@
             this.lblTitle.Size = new System.Drawing.Size(257, 36);
             this.lblTitle.TabIndex = 63;
             this.lblTitle.Text = "Create Item Units";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(424, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 20);
-            this.label5.TabIndex = 67;
-            this.label5.Text = "Barcode:";
-            // 
-            // txtBarcode
-            // 
-            this.txtBarcode.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarcode.Location = new System.Drawing.Point(428, 97);
-            this.txtBarcode.Name = "txtBarcode";
-            this.txtBarcode.Size = new System.Drawing.Size(359, 23);
-            this.txtBarcode.TabIndex = 70;
             // 
             // label6
             // 
@@ -503,6 +485,24 @@
             this.checkBox1.Text = "Active";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(424, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(77, 20);
+            this.label5.TabIndex = 67;
+            this.label5.Text = "Barcode:";
+            // 
+            // txtBarcode
+            // 
+            this.txtBarcode.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarcode.Location = new System.Drawing.Point(428, 97);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(359, 23);
+            this.txtBarcode.TabIndex = 70;
+            // 
             // Item_control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -550,6 +550,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "Item_control";
             this.Size = new System.Drawing.Size(869, 546);
+            this.Load += new System.EventHandler(this.Item_control_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -566,8 +567,6 @@
         public System.Windows.Forms.TextBox txtSupplierCode;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label lblTitle;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.TextBox txtBarcode;
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtColor;
         public System.Windows.Forms.Label label7;
@@ -598,5 +597,7 @@
         public System.Windows.Forms.Label label18;
         public System.Windows.Forms.TextBox txtRemarks;
         public System.Windows.Forms.CheckBox checkBox1;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox txtBarcode;
     }
 }

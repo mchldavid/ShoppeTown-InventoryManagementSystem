@@ -21,5 +21,10 @@ namespace ShoppeTown_InventorySystem
         {
 
         }
+
+        private void Item_control_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
