@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ShoppeTown_InventorySystem.Properties;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace ShoppeTown_InventorySystem
 {
@@ -110,6 +111,87 @@ namespace ShoppeTown_InventorySystem
                 con.Close();
             }
             return null;
+        }
+        public DataGridView dgv_SearchInventory(string search)
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = "" +
+              "select fasm_code as 'ITEM CODE', fasm_category as 'CATEGORY', " +
+              "fasm_subcat as 'SUB CAT', fasm_item as ITEM, fasm_desc as DESCRIPTION," +
+              "fasm_brand as BRAND, fasm_model as MODEL from tbl_fasm " +
+              "where fasm_code like '%" + search + "%' or " +
+                "      fasm_category like '%" + search + "%' or " +
+                "      fasm_subcat like '%" + search + "%' or " +
+                "      fasm_item like '%" + search + "%' or " +
+                "      fasm_desc like '%" + search + "%' or " +
+                "      fasm_brand like '%" + search + "%' or " +
+                "      fasm_model like '%" + search + "%';";
+                
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
+        }
+        public DataGridView dgvFASM(string search)
+        {
+            DataGridView dgv1 = new DataGridView();
+            try
+            {
+                con.Open();
+                string sql = "" +
+              "select * from tbl_fasm " +
+              "where fasm_code like '%" + search + "%' or " +
+                "      fasm_category like '%" + search + "%' or " +
+                "      fasm_subcat like '%" + search + "%' or " +
+                "      fasm_item like '%" + search + "%' or " +
+                "      fasm_desc like '%" + search + "%' or " +
+                "      fasm_brand like '%" + search + "%' or " +
+                "      fasm_model like '%" + search + "%' or " +
+                "      fasm_po like '%" + search + "%' or " +
+                "      fasm_wpo like '%" + search + "%' or " +
+                "      fasm_issued like '%" + search + "%' or " +
+                "      fasm_returned like '%" + search + "%' or " +
+                "      fasm_transferred like '%" + search + "%' or " +
+                "      fasm_damaged like '%" + search + "%' or " +
+                "      fasm_stocks like '%" + search + "%';";
+                
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.ExecuteNonQuery();
+                con.Close();
+
+                con.Open();
+                MySqlDataAdapter adapter = new MySqlDataAdapter(com);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                dgv1.DataSource = ds.Tables[0];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message, "dgv_SearchSections");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return dgv1;
         }
 
 
