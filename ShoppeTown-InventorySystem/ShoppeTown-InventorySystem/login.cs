@@ -79,5 +79,13 @@ namespace ShoppeTown_InventorySystem
             this.Hide();
             register.Show();
         }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnLogin_Click(sender, e);
+            }
+        }
     }
 }

@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminFASM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblDate = new System.Windows.Forms.Label();
             this.pnlDtp = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlButtons = new System.Windows.Forms.Panel();
@@ -50,13 +51,13 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.btn_RemoveItem = new System.Windows.Forms.Button();
+            this.btn_EditItem = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_RegisterItem = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_RegisterItem = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btn_EditItem = new System.Windows.Forms.Button();
-            this.btn_RemoveItem = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pnlBoard = new System.Windows.Forms.Panel();
             this.pnlDtp.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -124,6 +125,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(968, 41);
             this.panel4.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(682, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 19);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Search:";
             // 
             // pictureBox1
             // 
@@ -415,31 +427,31 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Location = new System.Drawing.Point(245, 283);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.ReadOnly = true;
@@ -465,6 +477,57 @@
             this.metroPanel1.VerticalScrollbarSize = 10;
             this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
             // 
+            // btn_RemoveItem
+            // 
+            this.btn_RemoveItem.BackColor = System.Drawing.Color.Firebrick;
+            this.btn_RemoveItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_RemoveItem.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RemoveItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_RemoveItem.Location = new System.Drawing.Point(6, 103);
+            this.btn_RemoveItem.Name = "btn_RemoveItem";
+            this.btn_RemoveItem.Size = new System.Drawing.Size(131, 32);
+            this.btn_RemoveItem.TabIndex = 7;
+            this.btn_RemoveItem.Text = "Remove Item";
+            this.btn_RemoveItem.UseVisualStyleBackColor = false;
+            // 
+            // btn_EditItem
+            // 
+            this.btn_EditItem.BackColor = System.Drawing.Color.ForestGreen;
+            this.btn_EditItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_EditItem.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EditItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_EditItem.Location = new System.Drawing.Point(6, 65);
+            this.btn_EditItem.Name = "btn_EditItem";
+            this.btn_EditItem.Size = new System.Drawing.Size(131, 32);
+            this.btn_EditItem.TabIndex = 6;
+            this.btn_EditItem.Text = "Edit Item";
+            this.btn_EditItem.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 19);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Manage Stocks";
+            // 
+            // btn_RegisterItem
+            // 
+            this.btn_RegisterItem.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_RegisterItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_RegisterItem.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RegisterItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_RegisterItem.Location = new System.Drawing.Point(6, 27);
+            this.btn_RegisterItem.Name = "btn_RegisterItem";
+            this.btn_RegisterItem.Size = new System.Drawing.Size(131, 32);
+            this.btn_RegisterItem.TabIndex = 3;
+            this.btn_RegisterItem.Text = "Register Item";
+            this.btn_RegisterItem.UseVisualStyleBackColor = false;
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -487,73 +550,20 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Date: 01/09/19";
             // 
-            // btn_RegisterItem
+            // pnlBoard
             // 
-            this.btn_RegisterItem.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btn_RegisterItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_RegisterItem.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RegisterItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_RegisterItem.Location = new System.Drawing.Point(6, 27);
-            this.btn_RegisterItem.Name = "btn_RegisterItem";
-            this.btn_RegisterItem.Size = new System.Drawing.Size(131, 32);
-            this.btn_RegisterItem.TabIndex = 3;
-            this.btn_RegisterItem.Text = "Register Item";
-            this.btn_RegisterItem.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 19);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Manage Stocks";
-            // 
-            // btn_EditItem
-            // 
-            this.btn_EditItem.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_EditItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_EditItem.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_EditItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_EditItem.Location = new System.Drawing.Point(6, 65);
-            this.btn_EditItem.Name = "btn_EditItem";
-            this.btn_EditItem.Size = new System.Drawing.Size(131, 32);
-            this.btn_EditItem.TabIndex = 6;
-            this.btn_EditItem.Text = "Edit Item";
-            this.btn_EditItem.UseVisualStyleBackColor = false;
-            // 
-            // btn_RemoveItem
-            // 
-            this.btn_RemoveItem.BackColor = System.Drawing.Color.Firebrick;
-            this.btn_RemoveItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_RemoveItem.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RemoveItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_RemoveItem.Location = new System.Drawing.Point(6, 103);
-            this.btn_RemoveItem.Name = "btn_RemoveItem";
-            this.btn_RemoveItem.Size = new System.Drawing.Size(131, 32);
-            this.btn_RemoveItem.TabIndex = 7;
-            this.btn_RemoveItem.Text = "Remove Item";
-            this.btn_RemoveItem.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(682, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Search:";
+            this.pnlBoard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnlBoard.Location = new System.Drawing.Point(231, 55);
+            this.pnlBoard.Name = "pnlBoard";
+            this.pnlBoard.Size = new System.Drawing.Size(993, 626);
+            this.pnlBoard.TabIndex = 17;
             // 
             // AdminFASM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1226, 701);
+            this.Controls.Add(this.pnlBoard);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlDtp);
             this.Controls.Add(this.panel1);
@@ -607,5 +617,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_RegisterItem;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel pnlBoard;
     }
 }
