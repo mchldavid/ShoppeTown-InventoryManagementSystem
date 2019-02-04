@@ -14,16 +14,35 @@ namespace ShoppeTown_InventorySystem
 {
     public partial class frmAdminDashboard : MetroFramework.Forms.MetroForm
     {
+        MyDatabase md = new MyDatabase();
         public frmAdminDashboard()
         {
             InitializeComponent();
         }
 
-        MyDatabase md = new MyDatabase();
-
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = md.dgv_SearchInventory("").DataSource;
+            MainControls.Dashboard dash = new MainControls.Dashboard();
+            pnlAdminBoard.Controls.Add(dash);
+        }
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            pnlAdminBoard.Controls.Clear();
+            MainControls.PO po = new MainControls.PO();
+            pnlAdminBoard.Controls.Add(po);
+        }
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            pnlAdminBoard.Controls.Clear();
+            MainControls.Dashboard dash = new MainControls.Dashboard();
+            pnlAdminBoard.Controls.Add(dash);
+        }
+
+        private void btnPurchasing_Click(object sender, EventArgs e)
+        {
+            pnlAdminBoard.Controls.Clear();
+            MainControls.PR pr = new MainControls.PR();
+            pnlAdminBoard.Controls.Add(pr);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -33,41 +52,11 @@ namespace ShoppeTown_InventorySystem
             login.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnFASM_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPurchasing_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = md.dgv_SearchInventory(textBox1.Text).DataSource;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnInventory_Click(object sender, EventArgs e)
-        {
-            AdminFASM frmFASM = new AdminFASM();
-            frmFASM.Show();
-            this.Hide();
+            pnlAdminBoard.Controls.Clear();
+            MainControls.FASM fasm = new MainControls.FASM();
+            pnlAdminBoard.Controls.Add(fasm);
         }
     }
 }
