@@ -368,7 +368,7 @@
             // 
             // pnlButtons
             // 
-            this.pnlButtons.BackColor = System.Drawing.Color.Cyan;
+            this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
             this.pnlButtons.Controls.Add(this.btnLogout);
             this.pnlButtons.Controls.Add(this.btnLogs);

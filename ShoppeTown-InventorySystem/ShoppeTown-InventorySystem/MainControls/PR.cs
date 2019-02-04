@@ -16,5 +16,10 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             InitializeComponent();
         }
+
+        private void PR_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
