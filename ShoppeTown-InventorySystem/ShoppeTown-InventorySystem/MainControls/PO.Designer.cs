@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblTitle);
             this.Name = "PO";
-            this.Size = new System.Drawing.Size(995, 626);
+            this.Size = new System.Drawing.Size(1045, 626);
             this.ResumeLayout(false);
             this.PerformLayout();
 

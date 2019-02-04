@@ -59,7 +59,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.dataGridView1);
             this.Name = "PR";
-            this.Size = new System.Drawing.Size(995, 626);
+            this.Size = new System.Drawing.Size(1045, 626);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

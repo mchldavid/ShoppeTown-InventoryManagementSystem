@@ -108,6 +108,9 @@
     <Compile Include="MainControls\PR.Designer.cs">
       <DependentUpon>PR.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainControls\Classes\MyDatabase.cs" />
+    <Compile Include="MainControls\Classes\MySecurity.cs" />
+    <Compile Include="MainControls\Classes\RegisterAutoProperty.cs" />
     <Compile Include="User_Controls\Item_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -168,8 +171,6 @@
     <Compile Include="Login\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\MyDatabase.cs" />
-    <Compile Include="Classes\MySecurity.cs" />
     <Compile Include="Login\nextregister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,7 +185,6 @@
     <Compile Include="Login\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\RegisterAutoProperty.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
