@@ -36,9 +36,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnEditPR = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDeletePR = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAddPR = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDeletePR = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnEditPR = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -182,42 +182,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controls";
             // 
-            // btnEditPR
+            // btnAddPR
             // 
-            this.btnEditPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
-            this.btnEditPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnEditPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditPR.BorderRadius = 0;
-            this.btnEditPR.ButtonText = "&Edit PR";
-            this.btnEditPR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditPR.DisabledColor = System.Drawing.Color.Gray;
-            this.btnEditPR.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEditPR.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEditPR.Iconimage")));
-            this.btnEditPR.Iconimage_right = null;
-            this.btnEditPR.Iconimage_right_Selected = null;
-            this.btnEditPR.Iconimage_Selected = null;
-            this.btnEditPR.IconMarginLeft = 0;
-            this.btnEditPR.IconMarginRight = 0;
-            this.btnEditPR.IconRightVisible = true;
-            this.btnEditPR.IconRightZoom = 0D;
-            this.btnEditPR.IconVisible = true;
-            this.btnEditPR.IconZoom = 50D;
-            this.btnEditPR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnEditPR.IsTab = false;
-            this.btnEditPR.Location = new System.Drawing.Point(10, 76);
-            this.btnEditPR.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnEditPR.Name = "btnEditPR";
-            this.btnEditPR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnEditPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
-            this.btnEditPR.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnEditPR.selected = false;
-            this.btnEditPR.Size = new System.Drawing.Size(144, 40);
-            this.btnEditPR.TabIndex = 15;
-            this.btnEditPR.TabStop = false;
-            this.btnEditPR.Text = "&Edit PR";
-            this.btnEditPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnEditPR.Textcolor = System.Drawing.Color.White;
-            this.btnEditPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnAddPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddPR.BorderRadius = 0;
+            this.btnAddPR.ButtonText = "&Add PR";
+            this.btnAddPR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddPR.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAddPR.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAddPR.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddPR.Iconimage")));
+            this.btnAddPR.Iconimage_right = null;
+            this.btnAddPR.Iconimage_right_Selected = null;
+            this.btnAddPR.Iconimage_Selected = null;
+            this.btnAddPR.IconMarginLeft = 0;
+            this.btnAddPR.IconMarginRight = 0;
+            this.btnAddPR.IconRightVisible = true;
+            this.btnAddPR.IconRightZoom = 0D;
+            this.btnAddPR.IconVisible = true;
+            this.btnAddPR.IconZoom = 50D;
+            this.btnAddPR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnAddPR.IsTab = false;
+            this.btnAddPR.Location = new System.Drawing.Point(10, 26);
+            this.btnAddPR.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.btnAddPR.Name = "btnAddPR";
+            this.btnAddPR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnAddPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnAddPR.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAddPR.selected = false;
+            this.btnAddPR.Size = new System.Drawing.Size(144, 40);
+            this.btnAddPR.TabIndex = 17;
+            this.btnAddPR.TabStop = false;
+            this.btnAddPR.Text = "&Add PR";
+            this.btnAddPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddPR.Textcolor = System.Drawing.Color.White;
+            this.btnAddPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnDeletePR
             // 
@@ -256,42 +256,42 @@
             this.btnDeletePR.Textcolor = System.Drawing.Color.White;
             this.btnDeletePR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btnAddPR
+            // btnEditPR
             // 
-            this.btnAddPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
-            this.btnAddPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddPR.BorderRadius = 0;
-            this.btnAddPR.ButtonText = "&Add PR";
-            this.btnAddPR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddPR.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAddPR.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAddPR.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddPR.Iconimage")));
-            this.btnAddPR.Iconimage_right = null;
-            this.btnAddPR.Iconimage_right_Selected = null;
-            this.btnAddPR.Iconimage_Selected = null;
-            this.btnAddPR.IconMarginLeft = 0;
-            this.btnAddPR.IconMarginRight = 0;
-            this.btnAddPR.IconRightVisible = true;
-            this.btnAddPR.IconRightZoom = 0D;
-            this.btnAddPR.IconVisible = true;
-            this.btnAddPR.IconZoom = 50D;
-            this.btnAddPR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnAddPR.IsTab = false;
-            this.btnAddPR.Location = new System.Drawing.Point(10, 26);
-            this.btnAddPR.Margin = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.btnAddPR.Name = "btnAddPR";
-            this.btnAddPR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.btnAddPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
-            this.btnAddPR.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAddPR.selected = false;
-            this.btnAddPR.Size = new System.Drawing.Size(144, 40);
-            this.btnAddPR.TabIndex = 17;
-            this.btnAddPR.TabStop = false;
-            this.btnAddPR.Text = "&Add PR";
-            this.btnAddPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAddPR.Textcolor = System.Drawing.Color.White;
-            this.btnAddPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditPR.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnEditPR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnEditPR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditPR.BorderRadius = 0;
+            this.btnEditPR.ButtonText = "&Edit PR";
+            this.btnEditPR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditPR.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEditPR.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEditPR.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEditPR.Iconimage")));
+            this.btnEditPR.Iconimage_right = null;
+            this.btnEditPR.Iconimage_right_Selected = null;
+            this.btnEditPR.Iconimage_Selected = null;
+            this.btnEditPR.IconMarginLeft = 0;
+            this.btnEditPR.IconMarginRight = 0;
+            this.btnEditPR.IconRightVisible = true;
+            this.btnEditPR.IconRightZoom = 0D;
+            this.btnEditPR.IconVisible = true;
+            this.btnEditPR.IconZoom = 50D;
+            this.btnEditPR.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnEditPR.IsTab = false;
+            this.btnEditPR.Location = new System.Drawing.Point(10, 76);
+            this.btnEditPR.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnEditPR.Name = "btnEditPR";
+            this.btnEditPR.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnEditPR.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnEditPR.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEditPR.selected = false;
+            this.btnEditPR.Size = new System.Drawing.Size(144, 40);
+            this.btnEditPR.TabIndex = 15;
+            this.btnEditPR.TabStop = false;
+            this.btnEditPR.Text = "&Edit PR";
+            this.btnEditPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEditPR.Textcolor = System.Drawing.Color.White;
+            this.btnEditPR.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // PR
             // 
