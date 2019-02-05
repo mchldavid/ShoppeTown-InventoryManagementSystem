@@ -32,5 +32,20 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
 
         }
+
+        private void btnRegICAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegICDrop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegICEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
