@@ -16,5 +16,30 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PO_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditPR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeletePR_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

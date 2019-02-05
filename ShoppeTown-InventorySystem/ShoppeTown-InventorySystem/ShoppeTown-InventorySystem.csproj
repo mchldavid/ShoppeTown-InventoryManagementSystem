@@ -90,6 +90,12 @@
     <Compile Include="MainControls\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainControls\Delivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Delivery.Designer.cs">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainControls\FASM.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainControls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Delivery.resx">
+      <DependentUpon>Delivery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainControls\FASM.resx">
       <DependentUpon>FASM.cs</DependentUpon>

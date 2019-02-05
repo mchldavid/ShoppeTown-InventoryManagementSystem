@@ -71,9 +71,19 @@ namespace ShoppeTown_InventorySystem
             login.Show();
         }
 
-        private void btnFASM_Click(object sender, EventArgs e)
+        private void btnDelivery_Click(object sender, EventArgs e)
         {
             button = "4";
+            getBackColor(button);
+
+            pnlAdminBoard.Controls.Clear();
+            MainControls.Delivery deliv = new MainControls.Delivery();
+            pnlAdminBoard.Controls.Add(deliv);
+        }
+
+        private void btnFASM_Click(object sender, EventArgs e)
+        {
+            button = "5";
             getBackColor(button);
 
             pnlAdminBoard.Controls.Clear();
@@ -83,13 +93,13 @@ namespace ShoppeTown_InventorySystem
 
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-            button = "5";
+            button = "6";
             getBackColor(button);
         }
 
         private void btnLogs_Click(object sender, EventArgs e)
         {
-            button = "6";
+            button = "7";
             getBackColor(button);
         }
 
@@ -100,6 +110,7 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(182, 89, 5);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -110,6 +121,7 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(182, 89, 5);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -120,6 +132,7 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -130,7 +143,8 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnFASM.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnDelivery.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -140,8 +154,9 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnRegistration.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnFASM.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
@@ -150,11 +165,30 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnRegistration.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
+            }
+            else if (click == "7")
+            {
+                btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
+                btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(182, 89, 5);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
     }
 }

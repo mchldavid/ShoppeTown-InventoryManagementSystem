@@ -42,6 +42,7 @@
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPurchaseRequest = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlButtons = new System.Windows.Forms.Panel();
+            this.btnDelivery = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlDtp.SuspendLayout();
@@ -58,6 +59,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1226, 56);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -198,7 +200,7 @@
             this.btnFASM.IconZoom = 50D;
             this.btnFASM.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnFASM.IsTab = false;
-            this.btnFASM.Location = new System.Drawing.Point(0, 145);
+            this.btnFASM.Location = new System.Drawing.Point(0, 193);
             this.btnFASM.Name = "btnFASM";
             this.btnFASM.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnFASM.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -236,7 +238,7 @@
             this.btnRegistration.IconZoom = 50D;
             this.btnRegistration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnRegistration.IsTab = false;
-            this.btnRegistration.Location = new System.Drawing.Point(0, 193);
+            this.btnRegistration.Location = new System.Drawing.Point(0, 241);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnRegistration.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -274,7 +276,7 @@
             this.btnLogs.IconZoom = 50D;
             this.btnLogs.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogs.IsTab = false;
-            this.btnLogs.Location = new System.Drawing.Point(0, 241);
+            this.btnLogs.Location = new System.Drawing.Point(0, 289);
             this.btnLogs.Name = "btnLogs";
             this.btnLogs.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogs.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -312,7 +314,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(0, 289);
+            this.btnLogout.Location = new System.Drawing.Point(0, 337);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnLogout.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
@@ -369,6 +371,7 @@
             // pnlButtons
             // 
             this.pnlButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.pnlButtons.Controls.Add(this.btnDelivery);
             this.pnlButtons.Controls.Add(this.btnPurchaseRequest);
             this.pnlButtons.Controls.Add(this.btnLogout);
             this.pnlButtons.Controls.Add(this.btnLogs);
@@ -380,6 +383,44 @@
             this.pnlButtons.Name = "pnlButtons";
             this.pnlButtons.Size = new System.Drawing.Size(182, 647);
             this.pnlButtons.TabIndex = 2;
+            // 
+            // btnDelivery
+            // 
+            this.btnDelivery.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(89)))), ((int)(((byte)(5)))));
+            this.btnDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnDelivery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDelivery.BorderRadius = 0;
+            this.btnDelivery.ButtonText = "Delivery";
+            this.btnDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelivery.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDelivery.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDelivery.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelivery.Iconimage")));
+            this.btnDelivery.Iconimage_right = null;
+            this.btnDelivery.Iconimage_right_Selected = null;
+            this.btnDelivery.Iconimage_Selected = null;
+            this.btnDelivery.IconMarginLeft = 0;
+            this.btnDelivery.IconMarginRight = 0;
+            this.btnDelivery.IconRightVisible = true;
+            this.btnDelivery.IconRightZoom = 0D;
+            this.btnDelivery.IconVisible = true;
+            this.btnDelivery.IconZoom = 50D;
+            this.btnDelivery.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnDelivery.IsTab = false;
+            this.btnDelivery.Location = new System.Drawing.Point(0, 145);
+            this.btnDelivery.Name = "btnDelivery";
+            this.btnDelivery.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnDelivery.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(103)))), ((int)(((byte)(6)))));
+            this.btnDelivery.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDelivery.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnDelivery.selected = false;
+            this.btnDelivery.Size = new System.Drawing.Size(182, 48);
+            this.btnDelivery.TabIndex = 5;
+            this.btnDelivery.TabStop = false;
+            this.btnDelivery.Text = "Delivery";
+            this.btnDelivery.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDelivery.Textcolor = System.Drawing.Color.White;
+            this.btnDelivery.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
             // frmAdminDashboard
             // 
@@ -417,5 +458,6 @@
         public Bunifu.Framework.UI.BunifuFlatButton btnLogout;
         public Bunifu.Framework.UI.BunifuFlatButton btnPurchaseRequest;
         private System.Windows.Forms.Panel pnlButtons;
+        public Bunifu.Framework.UI.BunifuFlatButton btnDelivery;
     }
 }
