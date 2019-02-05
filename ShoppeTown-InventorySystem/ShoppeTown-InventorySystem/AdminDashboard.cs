@@ -95,6 +95,10 @@ namespace ShoppeTown_InventorySystem
         {
             button = "6";
             getBackColor(button);
+
+            pnlAdminBoard.Controls.Clear();
+            MainControls.Registration rg = new MainControls.Registration();
+            pnlAdminBoard.Controls.Add(rg);
         }
 
         private void btnLogs_Click(object sender, EventArgs e)

@@ -117,6 +117,12 @@
     <Compile Include="MainControls\Classes\MyDatabase.cs" />
     <Compile Include="MainControls\Classes\MySecurity.cs" />
     <Compile Include="MainControls\Classes\RegisterAutoProperty.cs" />
+    <Compile Include="MainControls\Registration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Controls\Item_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainControls\PR.resx">
       <DependentUpon>PR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\Item_control.resx">
       <DependentUpon>Item_control.cs</DependentUpon>
