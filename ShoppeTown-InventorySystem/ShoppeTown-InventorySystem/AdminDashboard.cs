@@ -111,7 +111,7 @@ namespace ShoppeTown_InventorySystem
         {
             if (click == "1")
             {
-                btnDashboard.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnDashboard.Normalcolor = Color.FromArgb(96,169,23);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -123,7 +123,7 @@ namespace ShoppeTown_InventorySystem
             else if (click == "2")
             {
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnPurchaseRequest.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnPurchaseRequest.Normalcolor = Color.FromArgb(96,169,23);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -135,7 +135,7 @@ namespace ShoppeTown_InventorySystem
             {
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnPurchaseOrder.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnPurchaseOrder.Normalcolor = Color.FromArgb(96,169,23);
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -147,7 +147,7 @@ namespace ShoppeTown_InventorySystem
                 btnDashboard.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnDelivery.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnDelivery.Normalcolor = Color.FromArgb(96,169,23);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -159,7 +159,7 @@ namespace ShoppeTown_InventorySystem
                 btnPurchaseRequest.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnFASM.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnFASM.Normalcolor = Color.FromArgb(96,169,23);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
@@ -171,7 +171,7 @@ namespace ShoppeTown_InventorySystem
                 btnPurchaseOrder.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnRegistration.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnRegistration.Normalcolor = Color.FromArgb(96,169,23);
                 btnLogs.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
@@ -183,7 +183,7 @@ namespace ShoppeTown_InventorySystem
                 btnDelivery.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnFASM.Normalcolor = Color.FromArgb(21, 32, 40);
                 btnRegistration.Normalcolor = Color.FromArgb(21, 32, 40);
-                btnLogs.Normalcolor = Color.FromArgb(182, 89, 5);
+                btnLogs.Normalcolor = Color.FromArgb(96,169,23);
                 btnLogout.Normalcolor = Color.FromArgb(21, 32, 40);
             }
         }
@@ -193,6 +193,9 @@ namespace ShoppeTown_InventorySystem
 
         }
 
-        
+        private void pnlAdminBoard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

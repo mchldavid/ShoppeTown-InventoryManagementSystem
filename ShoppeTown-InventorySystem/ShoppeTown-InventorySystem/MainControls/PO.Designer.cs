@@ -89,7 +89,7 @@
             // 
             this.txtSearch.BackColor = System.Drawing.Color.White;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtSearch.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Gray;
             this.txtSearch.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSearch.HintText = "Search Here...";
@@ -118,11 +118,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 9);
+            this.label1.Location = new System.Drawing.Point(7, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 23);
+            this.label1.Size = new System.Drawing.Size(281, 26);
             this.label1.TabIndex = 13;
             this.label1.Text = "Pending Purchase Request";
             // 
@@ -195,7 +195,7 @@
             this.btnAddPR.ButtonText = "&Add Puchase Order";
             this.btnAddPR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddPR.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAddPR.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPR.Font = new System.Drawing.Font("Montserrat", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddPR.Iconcolor = System.Drawing.Color.Transparent;
             this.btnAddPR.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAddPR.Iconimage")));
             this.btnAddPR.Iconimage_right = null;
@@ -237,11 +237,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 9);
+            this.label2.Location = new System.Drawing.Point(7, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(152, 23);
+            this.label2.Size = new System.Drawing.Size(167, 26);
             this.label2.TabIndex = 13;
             this.label2.Text = "Purchase Order";
             // 
