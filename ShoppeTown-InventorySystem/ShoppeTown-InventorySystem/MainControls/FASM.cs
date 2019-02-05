@@ -20,12 +20,13 @@ namespace ShoppeTown_InventorySystem.MainControls
 
         private void FASM_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = md.dgvFASM("").DataSource;
+            dataGridView2.DataSource = md.dgvFASM("").DataSource;
+            dataGridView1.DataSource = md.dgvUnissued("").DataSource;
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = md.dgvFASM(txtSearch.Text).DataSource;
+            dataGridView2.DataSource = md.dgvFASM(txtSearch.Text).DataSource;
         }
     }
 }

@@ -123,6 +123,12 @@
     <Compile Include="User_Controls\Item_control.Designer.cs">
       <DependentUpon>Item_control.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Controls\SubCategory1_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\Item_control.resx">
       <DependentUpon>Item_control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\SubCategory1_control.resx">
       <DependentUpon>SubCategory1_control.cs</DependentUpon>
