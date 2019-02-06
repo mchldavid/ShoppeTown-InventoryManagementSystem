@@ -194,7 +194,445 @@ namespace ShoppeTown_InventorySystem
             return dgv1;
         }
 
+        //=========================register item code================
+        public string[] showCategory()
+        {
+            string[] cont = new string[100];
+            for (int x = 0; x < 100; x++)
+                cont[x] = "";
+
+            int num = 0;
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_category";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[num++] = dr1["category_Name"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "select Category");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+        }
+
+        public string sCode(string categoryName)
+        {
+            string code = "";
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_category WHERE category_Name = @cN";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", categoryName);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    code = dr1["category_Code"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "sCode");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return code;
+        }
+
+        public string sSubCat(string cat, string code, string sub)
+        {
+            string num = "";
+            try
+            {
+                con.Open();
+                string sql = "SELECT a.subCategory_Number FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN AND b.category_Code = @cC AND a.subCategory_Name = @sN;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.Parameters.AddWithValue("@sN", sub);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    num = dr1["subCategory_Number"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "sSubCat");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return num;
+        }
+
+        public string sItem(string cat, string code, string sub)
+        {
+            string num = "";
+            try
+            {
+                con.Open();
+                string sql = "SELECT a.subCategory_Number FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN AND b.category_Code = @cC AND a.subCategory_Name = @sN;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.Parameters.AddWithValue("@sN", sub);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    num = dr1["subCategory_Number"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "sSubCat");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return num;
+        }
+
+        public string[] ShowSubCategory(string cat, string code)
+        {
+            string[] cont = new string[100];
+            for (int x = 0; x < 100; x++)
+                cont[x] = "";
+
+            int num = 0;
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN AND b.category_Code = @cC ;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[num++] = dr1["subCategory_Name"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "select SubCategory");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+        }
+
+        public string[] ShowItems(string cat, string code, string sub)
+        {
+            string[] cont = new string[200];
+            for (int x = 0; x < 200; x++)
+                cont[x] = "";
+
+            int num = 0;
+            try
+            {
+                con.Open();
+                string sql = "SELECT * FROM tbl_subcategory a, tbl_category b, tbl_item c WHERE a.category_id = b.category_id AND a.subCategory_id = c.subCategory_id AND b.category_Name = @cN AND b.category_Code = @cC AND a.subCategory_Name = @sN;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.Parameters.AddWithValue("@sN", sub);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[num++] = dr1["item_Name"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "ShowItems");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+        }
+
+        public string[] ShowBrand(string cat, string code, string sub, string item)
+        {
+            string[] cont = new string[200];
+            for (int x = 0; x < 200; x++)
+                cont[x] = "";
+
+            int num = 0;
+            try
+            {
+                con.Open();
+                string sql = "SELECT d.brand_Name FROM tbl_subcategory a, tbl_category b, tbl_item c, tbl_brand d WHERE a.category_id = b.category_id AND a.subCategory_id = c.subCategory_id AND c.item_id = d.item_id AND b.category_Name = @cN AND b.category_Code = @cC AND a.subCategory_Name = @sN AND c.item_Name = @iN;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.Parameters.AddWithValue("@sN", sub);
+                com.Parameters.AddWithValue("@iN", item);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com.ExecuteReader();
+                while (dr1.Read())
+                {
+                    cont[num++] = dr1["brand_Name"].ToString();
+                }
+                con.Close();
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "ShowBrand");
+            }
+            finally
+            {
+                con.Close();
+            }
+            return cont;
+        }
+
+        public void RegisterItemCode(string category, string code, string subcat, string items, string brand, string model, string description)
+        {
+        }
+
+        public void InsertCategory(string category, string code)//cat1
+        {
+            try
+            {
+                con.Open();
+                string sql1 = "INSERT INTO tbl_category(`category_Name`,`category_Code`) VALUES(@cN, @cC);";//inserting category
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@cN", category);
+                com1.Parameters.AddWithValue("@cC", code);
+                com1.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Created Successful", "Save!");
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message, "Insert Category");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void InsertSubCategory(string cat, string code, string subName)
+        {
+            int count = 0;
+            string id = "";
+            try
+            {
+                //kukunin yung id ng category
+                con.Open();
+                string sql2 = "SELECT category_id FROM tbl_category WHERE category_Name = @cN AND category_Code = @cC;";
+                MySqlCommand com2 = new MySqlCommand(sql2, con);
+                com2.Parameters.AddWithValue("@cN", cat);
+                com2.Parameters.AddWithValue("@cC", code);
+                com2.ExecuteNonQuery();
+
+                MySqlDataReader dr2 = com2.ExecuteReader();
+                while (dr2.Read())
+                {
+                    id = dr2["category_id"].ToString();
+                }
+                con.Close();
+
+                //kukunin yung bilang ng mga subcategory per category
+                con.Open();
+                string sql = "SELECT b.category_id FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN AND b.category_Code = @cC;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr = com.ExecuteReader();
+                while(dr.Read())
+                {
+                    count++;
+                }
+                con.Close();
+
+                //<-----inserting ng new subcategory----->
+                con.Open();
+                string sql1 = "INSERT INTO tbl_subcategory(`subCategory_Name`,`subCategory_Number`, `category_id`) VALUES(@sN, @sNum, @id);";//inserting sub-category
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@sN", subName);
+                com1.Parameters.AddWithValue("@sNum", ++count);
+                com1.Parameters.AddWithValue("@id", id);
+                com1.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Created Successful", "Save!");
+            }catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message + "b"+ count + "a" +id, "Insert SUBCategory");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void InsertItemName(string cat, string code, string subName, string item)
+        {
+            int count = 0;
+            string id = "";
+            try
+            {
+                //kukunin yung id ng subcategory
+                con.Open();
+                string sql = "SELECT a.subCategory_id FROM tbl_subcategory a, tbl_category b WHERE a.category_id = b.category_id AND b.category_Name = @cN AND b.category_Code = @cC AND a.subCategory_Name = @sN;";
+                MySqlCommand com = new MySqlCommand(sql, con);
+                com.Parameters.AddWithValue("@cN", cat);
+                com.Parameters.AddWithValue("@cC", code);
+                com.Parameters.AddWithValue("@sN", subName);
+                com.ExecuteNonQuery();
+
+                MySqlDataReader dr = com.ExecuteReader();
+                if(dr.Read())
+                {
+                    id = dr["subCategory_id"].ToString();
+                }
+                con.Close();
+
+                //kukunin yung bilang ng mga item per subcategory
+                con.Open();
+                string sql1 = "SELECT * FROM tbl_item WHERE subCategory_id = @id";
+                MySqlCommand com1 = new MySqlCommand(sql1, con);
+                com1.Parameters.AddWithValue("@id", id);
+                com1.ExecuteNonQuery();
+
+                MySqlDataReader dr1 = com1.ExecuteReader();
+                while (dr1.Read())
+                {
+                    count++;
+                }
+                con.Close();
+
+                //<-----inserting ng new subcategory----->
+                con.Open();
+                string sql2 = "INSERT INTO tbl_item(`item_Name`,`item_Number`, `subCategory_id`) VALUES(@iN, @iNum, @id);";//inserting item-name
+                MySqlCommand com2 = new MySqlCommand(sql2, con);
+                com2.Parameters.AddWithValue("@iN", item);
+                com2.Parameters.AddWithValue("@iNum", ++count);
+                com2.Parameters.AddWithValue("@id", id);
+                com2.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Created Successful", "Save!");
+            }
+            catch (MySqlException sq)
+            {
+                MessageBox.Show(sq.Message + "b" + count + "a" + id, "InsertItemName");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
 
+
+
+        //public string selectSubCategory(string cat_id, string subcat)//subcat1
+        //{
+        //    string id = "";
+        //    int num = 0;
+        //    try
+        //    {
+        //        con.Open();
+        //        string sql = "SELECT * FROM tbl_subcategory WHERE subCategory_Name = @sN ;";
+        //        MySqlCommand com = new MySqlCommand(sql, con);
+        //        com.Parameters.AddWithValue("@sN", subcat);
+        //        com.ExecuteNonQuery();
+
+        //        MySqlDataReader dr1 = com.ExecuteReader();
+        //        if (dr1.Read())
+        //        {
+        //             id = dr1["subCategory_Num"].ToString();
+        //        }
+        //        con.Close();
+
+        //        if (id == "")
+        //        {
+        //            con.Open();
+        //            string sqll = "SELECT * FROM tbl_subcategory WHERE category_id = @id ;";
+        //            MySqlCommand cyc = new MySqlCommand(sqll, con);
+        //            cyc.Parameters.AddWithValue("@id", cat_id);
+        //            cyc.ExecuteNonQuery();
+
+        //            MySqlDataReader drr = cyc.ExecuteReader();
+        //            if (drr.Read())
+        //            {
+        //                id = drr["subCategory_Num"].ToString();
+        //            }
+        //            con.Close();
+
+        //            con.Open();
+        //            string sql1 = "INSERT INTO tbl_subcategory(`subCategory_Name`,`subCategory_Number`,`category_id`) VALUES(@sN, @sNum, @id);";//inserting category
+        //            MySqlCommand com1 = new MySqlCommand(sql1, con);
+        //            com1.Parameters.AddWithValue("@sN", subcat);
+        //            com1.Parameters.AddWithValue("@sNum", code);
+        //            com1.Parameters.AddWithValue("@id", code);
+        //            com1.ExecuteNonQuery();
+        //            con.Close();
+
+        //            con.Open();
+        //            string sql2 = "SELECT * FROM tbl_category WHERE category_Name = @cN AND category_Code = @cC;";
+        //            MySqlCommand com2 = new MySqlCommand(sql2, con);
+        //            com2.Parameters.AddWithValue("@cN", category);
+        //            com2.Parameters.AddWithValue("@cC", code);
+        //            com2.ExecuteNonQuery();
+
+        //            MySqlDataReader dr2 = com2.ExecuteReader();
+        //            if (dr2.Read())
+        //            {
+        //                id = dr2["category_id"].ToString();
+        //            }
+        //            con.Close();
+        //        }
+        //    }
+        //    catch (MySqlException sq)
+        //    {
+        //        MessageBox.Show(sq.Message, "select Category");
+        //    }
+        //    finally
+        //    {
+        //        con.Close();
+        //    }
+        //    return id;
+        //}
     }
 }

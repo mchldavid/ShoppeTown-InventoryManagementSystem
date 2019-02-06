@@ -43,11 +43,6 @@ namespace ShoppeTown_InventorySystem
 
         }
 
-        private void btnPurchasing_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             dataGridView1.DataSource = md.dgv_SearchInventory(textBox1.Text).DataSource;
@@ -68,6 +63,14 @@ namespace ShoppeTown_InventorySystem
             AdminFASM frmFASM = new AdminFASM();
             frmFASM.Show();
             this.Hide();
+        }
+
+        private void btnItemCode_Click(object sender, EventArgs e)
+        {
+            ItemCode_control item = new ItemCode_control();
+
+            pnlBoard.Controls.Clear();
+            pnlBoard.Controls.Add(item);
         }
     }
 }

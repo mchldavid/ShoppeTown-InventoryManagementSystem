@@ -70,3 +70,4 @@ C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-I
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.ItemLocation_control.resources
 C:\Users\Anye\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.AdminFASM.resources
 C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.AdminFASM.resources
+C:\Users\Michael David\Documents\GitHub\ShoppeTown-InventoryManagementSystem\ShoppeTown-InventorySystem\ShoppeTown-InventorySystem\obj\Debug\ShoppeTown_InventorySystem.ItemCode_control.resources

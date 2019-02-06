@@ -90,6 +90,13 @@
     <Compile Include="AdminFASM.Designer.cs">
       <DependentUpon>AdminFASM.cs</DependentUpon>
     </Compile>
+    <Compile Include="ItemCode_control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemCode_control.Designer.cs">
+      <DependentUpon>ItemCode_control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regItemCode.cs" />
     <Compile Include="User_Controls\Item_control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminFASM.resx">
       <DependentUpon>AdminFASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemCode_control.resx">
+      <DependentUpon>ItemCode_control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\Item_control.resx">
       <DependentUpon>Item_control.cs</DependentUpon>
