@@ -84,6 +84,12 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegForm.Designer.cs">
+      <DependentUpon>frmRegForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainControls\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,12 +134,6 @@
     </Compile>
     <Compile Include="User_Controls\Item_control.Designer.cs">
       <DependentUpon>Item_control.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RegForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegForm.Designer.cs">
-      <DependentUpon>RegForm.cs</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\SubCategory1_control.cs">
       <SubType>UserControl</SubType>
@@ -206,6 +206,9 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRegForm.resx">
+      <DependentUpon>frmRegForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainControls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,9 +229,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\Item_control.resx">
       <DependentUpon>Item_control.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegForm.resx">
-      <DependentUpon>RegForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\SubCategory1_control.resx">
       <DependentUpon>SubCategory1_control.cs</DependentUpon>

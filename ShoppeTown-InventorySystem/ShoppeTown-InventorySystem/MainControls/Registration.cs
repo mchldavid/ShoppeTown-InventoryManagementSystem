@@ -27,15 +27,15 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
             dataGridView1.DataSource = md.dgv_SearchInventory("").DataSource;
         }
-
-        private void label5_Click(object sender, EventArgs e)
+        private void btnRegItemCode_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnRegICAdd_Click(object sender, EventArgs e)
         {
-
+            frmRegForm rf = new frmRegForm();
+            rf.Show();
         }
 
         private void btnRegICDrop_Click(object sender, EventArgs e)
@@ -47,5 +47,7 @@ namespace ShoppeTown_InventorySystem.MainControls
         {
 
         }
+
+       
     }
 }

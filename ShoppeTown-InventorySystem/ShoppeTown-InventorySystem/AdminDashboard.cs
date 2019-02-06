@@ -38,6 +38,7 @@ namespace ShoppeTown_InventorySystem
             pnlAdminBoard.Controls.Clear();
             MainControls.Dashboard dash = new MainControls.Dashboard();
             pnlAdminBoard.Controls.Add(dash);
+            
         }
 
        
