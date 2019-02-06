@@ -72,12 +72,11 @@ namespace ShoppeTown_InventorySystem
 
         private void lblLogin_MouseHover(object sender, EventArgs e)
         {
-            lblLogin.BackColor = Color.Orange;
         }
 
         private void lblLogin_MouseLeave(object sender, EventArgs e)
         {
-            lblLogin.BackColor = Color.White;
+          
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

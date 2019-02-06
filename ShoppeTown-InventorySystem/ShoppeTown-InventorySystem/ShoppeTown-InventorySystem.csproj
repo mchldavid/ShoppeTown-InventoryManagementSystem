@@ -84,11 +84,50 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminFASM.cs">
+    <Compile Include="frmRegForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminFASM.Designer.cs">
-      <DependentUpon>AdminFASM.cs</DependentUpon>
+    <Compile Include="frmRegForm.Designer.cs">
+      <DependentUpon>frmRegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\Delivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Delivery.Designer.cs">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\FASM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\FASM.Designer.cs">
+      <DependentUpon>FASM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\PO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\PO.Designer.cs">
+      <DependentUpon>PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\PR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\PR.Designer.cs">
+      <DependentUpon>PR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainControls\Classes\MyDatabase.cs" />
+    <Compile Include="MainControls\Classes\MySecurity.cs" />
+    <Compile Include="MainControls\Classes\RegisterAutoProperty.cs" />
+    <Compile Include="MainControls\Registration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainControls\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
     <Compile Include="ItemCode_control.cs">
       <SubType>UserControl</SubType>
@@ -151,34 +190,49 @@
     <Compile Include="User_Controls\ItemLocation_control.Designer.cs">
       <DependentUpon>ItemLocation_control.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="Login\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="Login\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\MyDatabase.cs" />
-    <Compile Include="Classes\MySecurity.cs" />
-    <Compile Include="nextregister.cs">
+    <Compile Include="Login\nextregister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="nextregister.Designer.cs">
+    <Compile Include="Login\nextregister.Designer.cs">
       <DependentUpon>nextregister.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="register.cs">
+    <Compile Include="Login\register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="register.Designer.cs">
+    <Compile Include="Login\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\RegisterAutoProperty.cs" />
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminFASM.resx">
-      <DependentUpon>AdminFASM.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegForm.resx">
+      <DependentUpon>frmRegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Delivery.resx">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\FASM.resx">
+      <DependentUpon>FASM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\PO.resx">
+      <DependentUpon>PO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\PR.resx">
+      <DependentUpon>PR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainControls\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ItemCode_control.resx">
       <DependentUpon>ItemCode_control.cs</DependentUpon>
@@ -210,10 +264,10 @@
     <EmbeddedResource Include="User_Controls\ItemLocation_control.resx">
       <DependentUpon>ItemLocation_control.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="Login\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nextregister.resx">
+    <EmbeddedResource Include="Login\nextregister.resx">
       <DependentUpon>nextregister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -225,7 +279,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="register.resx">
+    <EmbeddedResource Include="Login\register.resx">
       <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

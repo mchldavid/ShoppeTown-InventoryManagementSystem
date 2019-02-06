@@ -59,5 +59,30 @@ namespace ShoppeTown_InventorySystem
             }
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassword_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace ShoppeTown_InventorySystem
 
         MyDatabase md = new MyDatabase();
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -88,4 +89,5 @@ namespace ShoppeTown_InventorySystem
             }
         }
     }
+
 }
